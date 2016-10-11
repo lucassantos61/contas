@@ -2,7 +2,7 @@
 
 
 	<h1>Cadastro de contas</h1>
-	<form action = "teste.php" method="POST">
+	<form action = "../controller/contaController.php" method="POST">
 		<div class = "form-group">
 				<span>Nome da conta : </span>
 			<input type="text" name="nome" class = "form-control" required/>

@@ -5,7 +5,7 @@
 		private $vencimento;
 		private $nome;
 	
-		function __construct($nome,$vencimento,$valor){
+		function __construct($nome,$valor,$vencimento){
 			$this->nome = $nome;
 			$this->vencimento = $vencimento;
 			$this->valor = $valor;
@@ -23,10 +23,13 @@
 		public function setDataPgto($data){
 			$this->datapgto = $data;
 		}
-		public function getDataPgto(){
-			return $this->datapgto;
+		public function existePgto(){
+			if(isset($this->datapgto)){
+				return $this->datapgto;
+			}else{
+				return false;
+			}
 		}
-
 	}
 
 ?>
